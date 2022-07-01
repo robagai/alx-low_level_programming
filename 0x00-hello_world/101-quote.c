@@ -1,22 +1,39 @@
-#include <stdio.h>
-
-#include <unistd.h>
-
-
-
-/**
- * main - prints exactly "and that piece of art is useful"
- * robagai, 2021-08-26",
- * followed by a new line, to the standard error.
- * Return: 1 if success.
- */
-
-int main(void)
-
-{
-
-		write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
-
-			return (1);
-
-}
+#include <stdio.h>                                                                                                              
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                
+/**                                                                                                                             
+ * main - prints to string                                                                                                      
+ * Description: Prints "and that piece of art is useful.." without puts                                                         
+ * Return: 1                                                                                                                    
+  */                                                                                                                             
+                                                                                                                                
+                                                                                                                                
+                                                                                                                                
+int main(void)                                                                                                                  
+	                                                                                                                                
+{                                                                                                                               
+	                                                                                                                                
+	        char *s = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";                                              
+		                                                                                                                                
+		        long l = 59;                                                                                                            
+			                                                                                                                                
+			        long fd = 1;                                                                                                            
+				                                                                                                                                
+				        long syscall = 1;                                                                                                       
+					                                                                                                                                
+					        long ret = 0;                                                                                                           
+						                                                                                                                                
+						        _asm_ ("syscall"                                                                                                      
+									                                                                                                                                
+									                        : "=a" (ret)                                                                                            
+												                                                                                                                                
+												                        : "a" (syscall),                                                                                        
+															                                                                                                                                
+															                        "D" (fd),                                                                                               
+																		                                                                                                                                
+																		                        "S" (s),                                                                                                
+																					                                                                                                                                
+																					                        "d" (l));                                                                                               
+							                                                                                                                                
+							        return (1);
