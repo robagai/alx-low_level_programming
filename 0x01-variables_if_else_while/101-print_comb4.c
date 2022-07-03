@@ -28,6 +28,7 @@ int main(void)
 					if (ch != 55 || n != 56 || m != 57)
 					{
 						putchar(44);
+
 						putchar(32);}
 				}
 			}
