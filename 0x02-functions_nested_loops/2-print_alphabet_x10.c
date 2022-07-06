@@ -3,12 +3,21 @@
 
 
 /**
- * add - add two numbers
- * @i: integer i
- * @j: integer j
- * Return: (Solution)
+ * print_alphabet_x10 - print the alphabet in lowercase
+ * followed by a new line
  */
 
-int add(int i, int j){
-	return (i + j);
+
+
+void print_alphabet_x10(void)
+{
+	char alphabet;
+	int i;
+
+	for (i = 0; i < 10; i++)
+	{
+		for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+			_putchar(alphabet);
+		_putchar('\n');
+	}
 }
