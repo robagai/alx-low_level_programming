@@ -18,7 +18,7 @@ void times_table(void)
 		{
 			if ((left * right) < 10)
 			{
-				_putchar((left * right) + '0');	if (right == 9)
+	_putchar((left * right) + '0');	if (right == 9)
 					continue;
 				_putchar(',');
 				_putchar(' ');
