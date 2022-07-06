@@ -16,6 +16,7 @@ void times_table(void)
 	{
 		for (right = 0; right < 10; right++)
 		{
+
 			if ((left * right) < 10)
 			{
 	_putchar((left * right) + '0');	if (right == 9)
