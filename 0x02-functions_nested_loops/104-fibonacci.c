@@ -17,6 +17,7 @@ int main(void)
 	unsigned long int current = 1;
 	long current_head, current_tail, next_head, next_tail;
 	long sum_head, sum_tail;
+
 	printf("1");
 	for (i = 2; i <= 92; i++)
 	{
