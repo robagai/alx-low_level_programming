@@ -27,13 +27,15 @@ void times_table(void)
 					continue;
 				_putchar(' ');
 				continue;
-				_putchar(((left * right) / 10) + '0');
-				_putchar(((left * right) % 10) + '0');
-				if (right == 9)
-					continue;
-				_putchar(',');
-				_putchar(' ');
 			}
-			_putchar('\n');
+			_putchar(((left * right) / 10) + '0');
+			_putchar(((left * right) % 10) + '0');
+			if (right == 9)
+				continue;
+			_putchar(',');
+			_putchar(' ');
 		}
+		_putchar('\n');
 	}
+}
+
