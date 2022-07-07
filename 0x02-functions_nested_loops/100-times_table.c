@@ -22,6 +22,8 @@ void panctuate(int n)
 	}
 }
 
+
+
 /**
  * print_numbers - print values using _putchar
  * @k: integer k
@@ -55,6 +57,8 @@ void print_numbers(int k, int mod)
 	}
 }
 
+
+
 /**
  * print_times_table - print the n x i table
  * @n: integer n
@@ -63,8 +67,10 @@ void print_numbers(int k, int mod)
 void print_times_table(int n)
 {
 	int left, right, product, mod, postprod;
+
 	if (n > 15 || n < 0)
 		return;
+
 	for (left = 0; left <= n; left++)
 	{
 		for (right = 0; right <= n; right++)
@@ -73,7 +79,7 @@ void print_times_table(int n)
 			postprod = (left * (right + 1));
 			mod = right == n ? -1 : postprod >= 100 ? 1 : postprod >= 10 ? 2 : 3;
 			print_numbers(product, mod);
-			_putchar('\n');
 		}
+		_putchar('\n');
 	}
-
+}
