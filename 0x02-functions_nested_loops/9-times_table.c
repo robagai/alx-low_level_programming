@@ -16,10 +16,10 @@ void times_table(void)
 	{
 		for (right = 0; right < 10; right++)
 		{
-
 			if ((left * right) < 10)
 			{
-	_putchar((left * right) + '0');	if (right == 9)
+				_putchar((left * right) + '0');
+				if (right == 9)
 					continue;
 				_putchar(',');
 				_putchar(' ');
@@ -27,14 +27,13 @@ void times_table(void)
 					continue;
 				_putchar(' ');
 				continue;
+				_putchar(((left * right) / 10) + '0');
+				_putchar(((left * right) % 10) + '0');
+				if (right == 9)
+					continue;
+				_putchar(',');
+				_putchar(' ');
 			}
-			_putchar(((left * right) / 10) + '0');
-			_putchar(((left * right) % 10) + '0');
-			if (right == 9)
-				continue;
-			_putchar(',');
-			_putchar(' ');
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
-}
