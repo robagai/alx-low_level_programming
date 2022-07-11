@@ -7,6 +7,7 @@
  * Return: int
  */
 
+
 int _strlen(char *str))
 {
 	return (strlen(str));
@@ -16,6 +17,7 @@ int _strlen(char *str))
  * @s: string to search
  * Return: integer index where digit is first found
  */
+
 
 int _num_id(char *s)
 {
@@ -34,6 +36,7 @@ int _num_id(char *s)
  * @s: integer
  * Return: integer 1 or -1
  */
+
 int find_sign(char *s)
 {
 	int negatives = 0, i = 0, sign = 1;
@@ -55,6 +58,7 @@ int find_sign(char *s)
  * @s: string to convert
  * Return: integer
  */
+
 
 int _atoi(char *s)
 {
@@ -89,6 +93,7 @@ int _atoi(char *s)
 	{
 		num += (s[i] - '0') * t;
 		t /= 10;
+
 	}
 
 	return (num * sign);
