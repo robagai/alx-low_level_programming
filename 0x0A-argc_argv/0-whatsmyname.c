@@ -1,18 +1,15 @@
+#include "main.h"
 #include <stdio.h>
 /**
-* main -  writes program name
-* @argc: arguement count
-* @argv: array of pointers to CLI arguement
-* Return: 0
-**/
+ * main - Mian
+ * @argc: int type
+ * @argv: char type
+ * Return: printis files name
+ **/
 int main(int argc, char *argv[])
 {
-	printf("%s\n", argv[argc - 1]);
-	return (0);
+(void) argc;
+printf("%s\n", argv[0]);
+
+return (0);
 }
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Secur
